@@ -1,0 +1,95 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Container to center content and style the main layout */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width */
+    max-width: 900px; /* Limit the max width */
+    min-height: 400px; /* Ensure the container has a minimum height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chat box to display messages */
+.chat-box {
+    width: 100%; /* Make chat box take full width */
+    height: 300px; /* Increase height */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+/* Input and button styling */
+#question {
+    width: 100%; /* Make input field wider */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#ask-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ask-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the messages */
+.message {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+/* Question message styling (blue) */
+.message.question {
+    background-color: #007bff;
+    color: white;
+    text-align: left; /* Align text to the left */
+}
+
+/* Response message styling (light blue) */
+.message.response {
+    background-color: #d0e7f9;
+    color: black;
+    text-align: left; /* Align text to the left */
+    font-family: 'Roboto', sans-serif; /* Change font family */
+    font-weight: 500; /* Make text slightly bolder */
+}
+
+/* Optional: Additional media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Make the container more responsive on smaller screens */
+    }
+
+    .chat-box {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
